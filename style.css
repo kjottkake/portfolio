@@ -1,0 +1,13 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(176, 200, 231);
+}
+
+.skills {
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    padding: 5%;
+}
