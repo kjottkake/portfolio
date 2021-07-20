@@ -21,7 +21,10 @@ body {
     padding: 12px 20px;
 }
 
-img {
-    /* width: 40%; */
-    z-index: 1;
-}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
