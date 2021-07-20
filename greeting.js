@@ -1,12 +1,27 @@
 const greetings = ["Hei Hei!", "Bonjour!", "Hola!", "Yo!", "Sup!", "Ni hao！", "Annyeong!", "Salam!", "Konnichiwa!", "Dia dhuit!", "Selamat siang!"]
+const titles = ["photographer", "designer", "programmer", "traveler", "veteran", "immigrant"]
+const actions = ["draw", "3d model", "program", "take pictures of"]
 
-// const displayedGreeting = document.querySelector("#greeting");
+const lenGreetings = greetings.length;
+const lenTitles = titles.length;
 
-// console.log(displayedGreeting);
-
-function getRandomGreeting(){
-return Math.floor(Math.random() * greetings.length);
+function getRandomGreeting(len){
+return Math.floor(Math.random() * len);
 }
 
+document.getElementById("greeting").innerHTML = greetings[getRandomGreeting(lenGreetings)];
+document.getElementById("skillz").innerHTML = titles[getRandomGreeting(lenTitles)];
 
-document.getElementById("greeting").innerHTML = greetings[getRandomGreeting()];
+let i = 0;
+const txt = titles[getRandomGreeting(lenTitles)];
+const speed = 60;
+
+function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  typeWriter();
