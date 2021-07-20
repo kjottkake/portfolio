@@ -1,4 +1,4 @@
-const greetings = ["Hei Hei!", "Bonjour!", "Hola!", "Yo!", "Sup!", "你好！"]
+const greetings = ["Hei Hei!", "Bonjour!", "Hola!", "Yo!", "Sup!", "Ni hao！", "Annyeong!", "Salam!", "Konnichiwa!", "Dia dhuit!", "Selamat siang!"]
 
 // const displayedGreeting = document.querySelector("#greeting");
 
