@@ -16,9 +16,10 @@ body {
     text-align: center;
 }
 
-.skills h2 {
+h2 {
     font-size: 6.5rem;
-    padding: 12px 20px;
+    padding: 0;
+    text-align: center;
 }
 
 
