@@ -9,6 +9,8 @@ function getRandomGreeting(len){
 return Math.floor(Math.random() * len);
 }
 
+document.getElementById("demo").style.backgroundColor = "gray"; //setting background color of typewriter object
+
 document.getElementById("greeting").innerHTML = greetings[getRandomGreeting(lenGreetings)];
 document.getElementById("skillz").innerHTML = titles[getRandomGreeting(lenTitles)];
 
@@ -24,4 +26,4 @@ function typeWriter() {
     }
   }
 
-  typeWriter();
+setTimeout(typeWriter, 3000); //waits 3 seconds then runs typewriter
