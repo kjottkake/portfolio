@@ -23,12 +23,18 @@ let i = 0;
 const txt = titles[getRandomGreeting(lenTitles)]; //sets random text array for output
 const speed = 60;
 
+
 function typeWriter() {
     if (i < txt.length) {
       document.getElementById("demo").innerHTML += txt.charAt(i);
       i++;
       setTimeout(typeWriter, speed);
+      console.log("i: ", i);
     }
+    backspace();
   }
 
-setTimeout(typeWriter, 3000); //waits 3 seconds then runs typewriter
+
+
+setTimeout(typeWriter, 0);
+// setTimeout(typeWriter, 3000); //waits 3 seconds then runs typewriter
