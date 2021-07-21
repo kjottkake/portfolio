@@ -5,17 +5,22 @@ const actions = ["draw", "3d model", "program", "take pictures of"]
 const lenGreetings = greetings.length;
 const lenTitles = titles.length;
 
+//function to return randomgreeting array int
 function getRandomGreeting(len){
 return Math.floor(Math.random() * len);
 }
 
 document.getElementById("demo").style.backgroundColor = "gray"; //setting background color of typewriter object
 
+
+//setting random greeting or skill innerhtmls
 document.getElementById("greeting").innerHTML = greetings[getRandomGreeting(lenGreetings)];
 document.getElementById("skillz").innerHTML = titles[getRandomGreeting(lenTitles)];
 
+
+//typewriter function
 let i = 0;
-const txt = titles[getRandomGreeting(lenTitles)];
+const txt = titles[getRandomGreeting(lenTitles)]; //sets random text array for output
 const speed = 60;
 
 function typeWriter() {
